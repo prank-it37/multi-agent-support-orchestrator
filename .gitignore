@@ -1,0 +1,37 @@
+# --- Environment Variables & Secrets ---
+.env
+.env.*
+*.env
+
+# --- Virtual Environments ---
+venv/
+env/
+.venv/
+ENV/
+
+# --- Python Build & Cache Artifacts ---
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+*.whl
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# --- Vector Database Storage ---
+# ChromaDB stores local embeddings here; ignore so you don't commit heavy binary data
+chroma_db/
+chromdb/
+
+# --- Streamlit Artifacts ---
+.streamlit/secrets.toml
+*.log
+
+# --- IDE & Operating System Files ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
